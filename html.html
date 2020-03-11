@@ -1,0 +1,98 @@
+<html>
+<head>
+
+
+<title>WEB-HTML</title>
+<meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+
+
+
+</head>
+
+<body>
+    <script>
+        function logIn(){
+            var password='0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c';
+        var inputpassword=prompt('password?');
+        var username='koallla';
+        var inputname=prompt('username?');
+
+
+        if((password===inputpassword)&& (username===inputname))
+        {
+            alert('주인님 어서오세요');         
+        }else{
+            alert('네이놈');
+        
+        }
+    }
+    </script>
+
+
+    <input type="button" value="login" onclick="logIn();">
+
+
+    <h1><a href = "index.html">WEB</a></h1>
+    <h2>HTML</h2>
+
+    html is...
+    <script>
+    var bodyTag = document.querySelector('body');
+    </script>
+    <input type="button" value="night" onclick="bodyTag.style.backgroundColor='black';
+                                                bodyTag.style.color='white'
+    ">
+        <input type="button" value="day" onclick="bodyTag.style.backgroundColor='white';
+        bodyTag.style.color='black'
+">
+
+
+<input type="button" value="night" onclick="
+    var links = document.querySelectorAll('a');
+    if(this.value === 'night') {
+        bodyTag.style.backgroundColor='black';
+        bodyTag.style.color='white';
+        this.value='day';
+
+        
+        
+        var i = 0;
+
+            while(i < links.length)
+            {
+                links[i].style.color='white';
+                i = i+1;
+            }
+
+    }else {bodyTag.style.backgroundColor='white';
+        bodyTag.style.color='black';
+        this.value='night';
+        var i=0;
+
+            while(i < links.length)
+            {
+                links[i].style.color='black';
+                i = i+1;
+            }
+
+    }
+    ">
+
+    <input type="button" value="hana" onclick="alert(this.value);">
+
+
+
+    <ol>
+    <li><a href="html.html">html</a></li>
+    <li><a href="css.html">css</a></li>
+    <li><a href="js.html">js</a></li>
+    </ol>
+    <hr size="8" width="880" align="left" color="#efd5d3">
+    <img src="hello.jpg" width=auto height="300">
+    <img src="world.jpg" width=auto height="300">
+    <hr size="8" width="880" align="left" color="#efd5d3">
+</body>
+
+
+</html>

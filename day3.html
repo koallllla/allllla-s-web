@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB - CSS</title>
+        <meta charset="utf-8">
+        <script>
+
+        </script>
+        <style>
+        
+        
+            h1{
+                font-size:100px;
+            }
+        </style>
+</head>
+<body>
+    <header>
+    <h1><a href="index.html">WEB 바로가기 </a></h1>
+    </header>
+
+    <nav>
+
+        <!-- 1. 버튼을 어떻게 만들지? -->
+        <script>
+            var bodyTag=document.querySelector('body');
+        </script>
+
+
+
+
+<input type="button" value="night" onclick="
+
+        if(this.value==='night')
+        {
+            alert('지금부터 색상을 변경하겠습니다.');
+        bodyTag.style.backgroundColor='black';
+        bodyTag.style.color='white';
+        this.value='day';
+        alert('색상 변경이 완료되었습니다.');
+        }
+        else{
+            alert('지금부터 색상을 변경하겠습니다.');
+        bodyTag.style.backgroundColor='white';
+        bodyTag.style.color='black';
+        this.value='night';
+        alert('색상 변경이 완료되었습니다.');
+        }
+
+
+">
+
+<script>
+    var links = document.querySelectorAll('a');
+    var i = 0;
+
+    while(i < links.length)
+    {
+        links[i].style.color='white';
+        i = i+1;
+    }
+
+
+    
+</script>
+
+
+    <ol>
+        <li><a href="html.html">html</a></li>
+        <li><a href="day3.html">css</a></li>
+        <li><a href="js.html">javascript</a></li>
+    </ol>
+    </nav>
+    <article>
+    <h2>css</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo sunt quibusdam impedit, nesciunt vitae dolorem quasi esse non rerum repudiandae porro quos sint reprehenderit ipsum reiciendis qui nisi rem.
+    </article>
+</body>
+</html>
