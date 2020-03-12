@@ -1,62 +1,91 @@
-<!DOCTYPE html>
+
 <html>
+
 <head>
-    <title>WEB - CSS</title>
-        <meta charset="utf-8">
-        <script>
-
-        </script>
-        <style>
-        
-        
-            h1{
-                font-size:100px;
-            }
-        </style>
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Mansalva|Over+the+Rainbow|Pacifico&display=swap" rel="stylesheet">
+    <title>koallla's WEB</title>
 </head>
-<body>
-    <header>
-    <h1><a href="index.html">WEB 바로가기 </a></h1>
-    </header>
+     
+ 
+<style>
+    h1{
+        font-family: 'Codystar', cursive;
+        color : #f5c7a6; 
+        border : 5px dotted #efd5d3;
+        padding: 40px;
+        font-size : 45px;
 
-    <nav>
+    }
+    body{
+        font-family: 'Do Hyeon', sans-serif;
+        color : #7d7d7d;
+       
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
+<h1>koallla's web <a href="index.html">🌙</a></h1>
+
 
         <!-- 1. 버튼을 어떻게 만들지? -->
+      
         <script>
             var bodyTag=document.querySelector('body');
         </script>
 
 
 
-
 <input type="button" value="night" onclick="
-
-        if(this.value==='night')
-        {
-            alert('지금부터 색상을 변경하겠습니다.');
+    var links = document.querySelectorAll('a');
+    if(this.value === 'night') {
         bodyTag.style.backgroundColor='black';
         bodyTag.style.color='white';
         this.value='day';
-        alert('색상 변경이 완료되었습니다.');
-        }
-        else{
-            alert('지금부터 색상을 변경하겠습니다.');
-        bodyTag.style.backgroundColor='white';
+
+        
+        
+        var i = 0;
+
+            while(i < links.length)
+            {
+                links[i].style.color='white';
+                i = i+1;
+            }
+
+    }else {bodyTag.style.backgroundColor='white';
         bodyTag.style.color='black';
         this.value='night';
-        alert('색상 변경이 완료되었습니다.');
-        }
+        var i=0;
+
+            while(i < links.length)
+            {
+                links[i].style.color='black';
+                i = i+1;
+            }
+
+    }
+    ">
+    
 
 
 ">
 
+
+
+    <ol>
+        <li><a href="html.html">log-in&#128273;</a></li>
+        <li><a href="day3.html">day&#9925; & night&#127769;</a></li>
+        <li><a href="day4.html">Searching&#128269;</a></li>
+    </ol>
+    
 <script>
     var links = document.querySelectorAll('a');
     var i = 0;
 
     while(i < links.length)
     {
-        links[i].style.color='white';
+        links[i].style.color='#47a186';
         i = i+1;
     }
 
@@ -64,13 +93,6 @@
     
 </script>
 
-
-    <ol>
-        <li><a href="html.html">html</a></li>
-        <li><a href="day3.html">css</a></li>
-        <li><a href="js.html">javascript</a></li>
-    </ol>
-    </nav>
     <article>
     <h2>css</h2>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo sunt quibusdam impedit, nesciunt vitae dolorem quasi esse non rerum repudiandae porro quos sint reprehenderit ipsum reiciendis qui nisi rem.

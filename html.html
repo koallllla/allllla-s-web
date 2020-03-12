@@ -1,39 +1,62 @@
 <html>
 <head>
-
-
-<title>WEB-HTML</title>
-<meta charset="utf-8">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Codystar|Mansalva|Over+the+Rainbow|Pacifico&display=swap" rel="stylesheet">
+    <title>koallla's WEB</title>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
 
 
 
 </head>
 
 <body>
+
+    <style>
+        h1{
+            font-family: 'Codystar', cursive;
+            color : #f5c7a6; 
+            border : 5px dotted #efd5d3;
+            padding: 40px;
+            font-size : 45px;
+  
+        }
+        a{
+            text-decoration: none;
+        }
+        body {
+            
+            font-family: 'Do Hyeon', sans-serif;
+            color : #7d7d7d;
+        }
+    </style>
+<h1>koallla's web <a href="index.html">🌙</a></h1>
+
+
+
+<font color ='tomato'>로그인하기</font>
     <script>
         function logIn(){
-            var password='0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c';
-        var inputpassword=prompt('password?');
+        var password='ed946f65d2c785d90e827c5ffd879ce3b49c68d4c88013074176a7e73bc58bcf';
+        var inputpassword=sha256(prompt('password?'));
         var username='koallla';
         var inputname=prompt('username?');
 
 
         if((password===inputpassword)&& (username===inputname))
         {
-            alert('주인님 어서오세요');         
+            alert('주인님 어서오세요(__)');         
         }else{
-            alert('네이놈');
+            alert('누구세요?');
         
         }
     }
     </script>
 
 
-    <input type="button" value="login" onclick="logIn();">
+    <input type="button" value="login" onclick="logIn();">&#128273;
 
 
-    <h1><a href = "index.html">WEB</a></h1>
+    
     <h2>HTML</h2>
 
     html is...
@@ -48,50 +71,20 @@
 ">
 
 
-<input type="button" value="night" onclick="
-    var links = document.querySelectorAll('a');
-    if(this.value === 'night') {
-        bodyTag.style.backgroundColor='black';
-        bodyTag.style.color='white';
-        this.value='day';
-
-        
-        
-        var i = 0;
-
-            while(i < links.length)
-            {
-                links[i].style.color='white';
-                i = i+1;
-            }
-
-    }else {bodyTag.style.backgroundColor='white';
-        bodyTag.style.color='black';
-        this.value='night';
-        var i=0;
-
-            while(i < links.length)
-            {
-                links[i].style.color='black';
-                i = i+1;
-            }
-
-    }
-    ">
 
     <input type="button" value="hana" onclick="alert(this.value);">
 
 
 
     <ol>
-    <li><a href="html.html">html</a></li>
-    <li><a href="css.html">css</a></li>
-    <li><a href="js.html">js</a></li>
+    <li><a href="html.html">log-in&#128273;</a></li>
+    <li><a href="day3.html">day&#9925; & night&#127769;</a></li>
+    <li><a href="day4.html">Searching&#128269;</a></li>
     </ol>
-    <hr size="8" width="880" align="left" color="#efd5d3">
-    <img src="hello.jpg" width=auto height="300">
+    <hr size="8" width="903" align="left" color="#efd5d3">
+    <img src="hello.jpg" width="450" height="300" onmouseover="this.src='world.jpg'"  onmouseout="this.src='hello.jpg'">
     <img src="world.jpg" width=auto height="300">
-    <hr size="8" width="880" align="left" color="#efd5d3">
+    <hr size="8" width="903" align="left" color="#efd5d3">
 </body>
 
 
